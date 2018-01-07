@@ -1,0 +1,10 @@
+version: '2'
+services:
+  reactjs:
+      image: theweb/frontend-skybet:lastest
+      ports:
+        - "8080:8080"
+      environment:
+        REACTJS_HOST_DB: "192.168.1.234"
+        REACTJS_HOST_PORT: "27017"
+        
